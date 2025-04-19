@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T-CRM | The Foundation for Building and Retaining Customer Relationships</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Subtle fade-in animation */
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header / Navigation -->
+  <header class="bg-white shadow-md fixed w-full z-30">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="#" class="text-2xl font-bold text-indigo-600">T-CRM</a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#features" class="text-gray-700 hover:text-indigo-600 transition">Features</a>
+        <a href="#demo" class="text-gray-700 hover:text-indigo-600 transition">Get a Demo</a>
+        <a href="http://app.technixcrm.com/signup" class="text-indigo-600 font-semibold hover:underline">Free Trial</a>
+        <a href="http://app.technixcrm.com/login" class="text-gray-700 hover:text-indigo-600 transition">Login</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="#features" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50">Features</a>
+      <a href="#demo" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50">Get a Demo</a>
+      <a href="http://app.technixcrm.com/signup" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50">Free Trial</a>
+      <a href="http://app.technixcrm.com/login" class="block px-4 py-2 hover:bg-indigo-50">Login</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+      <div class="container mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center">
+        <div class="md:w-1/2 fade-in">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-4">
+            The Foundation for Building and Retaining Customer Relationships
+          </h1>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Generate leads, track prospects, avail opportunities, close deals, and retain clients with T-CRM.
+          </p>
+          <div class="space-x-4">
+            <a href="#demo" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md font-semibold shadow hover:bg-indigo-700 transition">
+              Book a Demo
+            </a>
+            <a href="http://app.technixcrm.com/signup" class="inline-block border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md font-semibold hover:bg-indigo-50 transition">
+              Start Free Trial
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+          <img src="assets/images/banner-img.gif" alt="T-CRM Banner" class="max-w-full rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Productivity Section -->
+    <section class="bg-indigo-50 py-16" id="features">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-8 text-center">Productivity</h2>
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h3 class="text-xl font-semibold mb-4">Increase Sales</h3>
+          <p class="text-gray-700 mb-6">
+            Bring in quality leads, nurture them, and turn them into happy, paying customers. Get a complete view of all customer data—personal details and communication. With the right offers made to the right customers at the optimal time, you can make better deals, resulting in improved ROI.
+          </p>
+          <ul class="list-disc list-inside text-left max-w-md mx-auto space-y-2 text-gray-700">
+            <li>Targeting new customers</li>
+            <li>Prioritize your leads better</li>
+            <li>Centralize sales operations</li>
+            <li>Reduce sales cycle</li>
+            <li>Improve sales conversions</li>
+            <li>Improve customer retention</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/images/productivity.png" alt="Productivity" class="rounded-lg shadow-md max-w-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-8 text-center">Experience</h2>
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h3 class="text-xl font-semibold mb-4">Maximize CLV</h3>
+          <p class="text-gray-700 mb-6">
+            Maximizing customer lifetime value (CLV) is a continuous process that requires dedication and a focus on long-term customer relationships. By implementing effective strategies and utilizing data-driven insights, businesses can reap the rewards of a loyal and profitable customer base.
+          </p>
+          <ul class="list-disc list-inside text-left max-w-md mx-auto space-y-2 text-gray-700">
+            <li>Offer a Referral Program</li>
+            <li>Provide Targeted, Personalized Campaigns</li>
+            <li>Put Them First – Listen Your Customers</li>
+            <li>Optimize Your Customer Service</li>
+            <li>Reward Your Most Loyal Clients</li>
+            <li>Benefit from Cross-Selling and Upselling Strategies</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/images/clv.png" alt="Customer Lifetime Value" class="rounded-lg shadow-md max-w-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="bg-indigo-50 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-8 text-center">Collaboration</h2>
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h3 class="text-xl font-semibold mb-4">Streamline Processes</h3>
+          <p class="text-gray-700 mb-6">
+            From managing leads to simplifying and streamlining the sales pipeline, T-CRM platform allows you to automate repetitive tasks, eliminate manual work, and boost performance. It incorporates a variety of functions across sales, marketing, and service operations to help sales team organize their work.
+          </p>
+          <ul class="list-disc list-inside text-left max-w-md mx-auto space-y-2 text-gray-700">
+            <li>Automate repetitive tasks</li>
+            <li>Manage prospects within your sales funnel</li>
+            <li>Improved data consolidation</li>
+            <li>Monitor progress with reporting and analytics tools</li>
+            <li>Generate sales leaderboards and productivity reports</li>
+            <li>Facilitated marketing campaigns</li>
+            <li>Lead Capture</li>
+            <li>Import Data</li>
+            <li>Data Allotment</li>
+            <li>Task Assignment</li>
+            <li>Follow-up Reminders</li>
+            <li>Workflow and Approvals</li>
+            <li>Marketing Automation</li>
+            <li>Sales Performance</li>
+            <li>Client Services</li>
+            <li>Payment Tracking</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/images/Collaboration.png" alt="Collaboration" class="rounded-lg shadow-md max-w-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Quick Links -->
+    <section class="bg-white py-12">
+      <div class="container mx-auto px-6 text-center space-x-4">
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Lead Management</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Contact Management</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Sales Automation</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Document Management</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Campaign Management</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Task Management</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Reporting</a>
+        <a href="javascript:void(0)" class="inline-block text-indigo-600 font-semibold hover:underline">Activity Management</a>
+      </div>
+    </section>
+
+    <!-- Lead Management Section -->
+    <section class="bg-indigo-50 py-16">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-8 text-center">Lead Management</h2>
+        <p class="text-gray-700 mb-6 text-center">
+          Capture, gather and organize leads from multiple sources to enhance lead conversion. Identify and follow-up on Cross-Selling and Upselling opportunities for better customer success strategies.
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 max-w-md mx-auto">
+          <li>Vet Leads</li>
+          <li>Qualification and Scoring</li>
+          <li>Reassign Dead Leads</li>
+          <li>Drip Email & SMS Campaigns</li>
+          <li>Track Appointments</li>
+          <li>Set Pipeline Stages</li>
+          <li>Nurture Lead through Sales Funnel stages</li>
+        </ul>
+        <div class="flex justify-center mt-8">
+          <img src="assets/images/lead-mangement.png" alt="Lead Management" class="rounded-lg shadow-md max-w-full" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-white py-16 text-center">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-indigo-700 mb-6">Ready to grow your business?</h2>
+        <a href="http://app.technixcrm.com/signup" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-md font-semibold shadow hover:bg-indigo-700 transition">
+          Start Your Free Trial Now
+        </a>
+        <div class="mt-6">
+          <img src="assets/images/strp.png" alt="Get Started" class="mx-auto max-w-xs" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Get a Demo Form Section -->
+    <section id="demo" class="bg-indigo-50 py-16">
+      <div class="container mx-auto px-6 max-w-lg bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-indigo-700 mb-6 text-center">Get a Demo</h2>
+        <form id="demo-form" class="space-y-6" novalidate>
+          <div>
+            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+            <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <p class="text-red-600 text-sm mt-1 hidden" id="name-error">Please enter your name.</p>
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+            <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <p class="text-red-600 text-sm mt-1 hidden" id="email-error">Please enter a valid email address.</p>
+          </div>
+          <div>
+            <label for="company" class="block text-gray-700 font-semibold mb-2">Company</label>
+            <input type="text" id="company" name="company" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition">
+            Submit
+          </button>
+          <p id="form-feedback" class="mt-4 text-center font-semibold"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-600 text-sm">
+    &copy; 2024 T-CRM. All rights reserved.
+  </footer>
+
+  
+  <script src="scripts/form.js"></script>
+</body>
+</html>
