@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -247,3 +248,50 @@
   <script src="scripts/form.js"></script>
 </body>
 </html>
+=======
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+// Form validation and submission simulation
+const form = document.getElementById('demo-form');
+const nameInput = form.name;
+const emailInput = form.email;
+const companyInput = form.company;
+const messageInput = form.message;
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const feedback = document.getElementById('form-feedback');
+
+function validateEmail(email) {
+  const re = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return re.test(email);
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let valid = true;
+  feedback.textContent = '';
+  nameError.classList.add('hidden');
+  emailError.classList.add('hidden');
+
+  if (!nameInput.value.trim()) {
+    nameError.classList.remove('hidden');
+    valid = false;
+  }
+  if (!validateEmail(emailInput.value.trim())) {
+    emailError.classList.remove('hidden');
+    valid = false;
+  }
+  if (!valid) return;
+
+  feedback.textContent = 'Submitting...';
+  setTimeout(() => {
+    feedback.textContent = 'Thank you for your interest! We will get back to you soon.';
+    form.reset();
+  }, 1500);
+});
+>>>>>>> 48f135c (added footer)
