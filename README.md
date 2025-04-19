@@ -85,8 +85,9 @@ Please consider supporting the creators on Freepik for more awesome content.
 git clone https://github.com/aanyakathuria/technix-crm-redesign.git
 ```
 **Step 2:** Navigate into the project
+```bash
 cd technix-crm-redesign
-
+```
 
 ## 📌 License
 This project is licensed under the MIT License — feel free to use, adapt, and credit us when sharing
