@@ -16,7 +16,7 @@ This project is a redesign initiative aimed at improving the user interface and 
 - Clean visual structure for CRM functionalities
 - Updated UI components and icons
 - Improved visual hierarchy
-- 
+  
 ## 🌟 Key Features
 
 - Fully responsive layout with smooth navigation  
