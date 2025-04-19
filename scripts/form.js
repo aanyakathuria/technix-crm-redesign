@@ -1,57 +1,66 @@
-// Mobile menu toggle
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
+// scripts/form.js
 
-mobileMenuButton?.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-});
-
-// Form validation and submission
+// Grab form elements
 const form = document.getElementById('demo-form');
+const nameInput = form.name;
+const emailInput = form.email;
+const companyInput = form.company;
+const messageInput = form.message;
 
-if (form) {
-  const nameInput = form.name;
-  const emailInput = form.email;
-  const companyInput = form.company;
-  const messageInput = form.message;
-  const nameError = document.getElementById('name-error');
-  const emailError = document.getElementById('email-error');
-  const feedback = document.getElementById('form-feedback');
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const feedback = document.getElementById('form-feedback');
 
-  // Email validation regex
-  function validateEmail(email) {
-    const re = /^[\w.-]+@([\w-]+\.)+[\w-]{2,}$/;
-    return re.test(email);
+// Email validation regex
+function validateEmail(email) {
+  const re = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return re.test(email);
+}
+
+// Submit event
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  // Reset errors and styles
+  nameError.classList.add('hidden');
+  emailError.classList.add('hidden');
+  feedback.textContent = '';
+  feedback.className = '';
+  nameInput.classList.remove('border-red-500');
+  emailInput.classList.remove('border-red-500');
+
+  // Name validation
+  if (!nameInput.value.trim()) {
+    nameError.classList.remove('hidden');
+    nameInput.classList.add('border-red-500');
+    valid = false;
   }
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let valid = true;
+  // Email validation
+  if (!validateEmail(emailInput.value.trim())) {
+    emailError.classList.remove('hidden');
+    emailInput.classList.add('border-red-500');
+    valid = false;
+  }
 
-    // Reset errors
-    feedback.textContent = '';
-    nameError.classList.add('hidden');
-    emailError.classList.add('hidden');
+  if (!valid) return;
 
-    // Name check
-    if (!nameInput.value.trim()) {
-      nameError.classList.remove('hidden');
-      valid = false;
-    }
+  // Simulate submission
+  feedback.textContent = 'Submitting...';
+  feedback.classList.add('text-blue-600');
 
-    // Email check
-    if (!validateEmail(emailInput.value.trim())) {
-      emailError.classList.remove('hidden');
-      valid = false;
-    }
+  try {
+    await new Promise((resolve) => setTimeout(resolve, 1500)); // Simulate API call
 
-    if (!valid) return;
+    feedback.textContent = '✅ Thank you! We will contact you soon.';
+    feedback.classList.remove('text-blue-600');
+    feedback.classList.add('text-green-600');
 
-    // Simulate submission
-    feedback.textContent = 'Submitting...';
-    setTimeout(() => {
-      feedback.textContent = 'Thank you for your interest! We will get back to you soon.';
-      form.reset();
-    }, 1500);
-  });
-}
+    form.reset();
+  } catch (error) {
+    feedback.textContent = '❌ Something went wrong. Please try again.';
+    feedback.classList.remove('text-blue-600');
+    feedback.classList.add('text-red-600');
+  }
+});
