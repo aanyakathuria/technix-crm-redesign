@@ -18,6 +18,15 @@ This project is a redesign initiative aimed at improving the user interface and 
 - **[Optional: Add any libraries/frameworks if used]**
 - **Assets** – Icons and illustrations used for CRM modules
 
+## 📬 Contact
+
+For feedback, suggestions, or collaborations:  
+**Aanya Kathuria** – [LinkedIn] (https://www.linkedin.com/in/aanya-kathuria-6071a8326/)
+**Yashika Kansal** – [LinkedIn] (https://www.linkedin.com/in/yashika-kansal-1829b7233/)
+**Shivani Bansal** – [LinkedIn] (https://www.linkedin.com/in/shivani-bansal-46546433b/)
+
+Feel free to open an issue or drop a message.
+
 ## 📁 Credits
 - Illustrations and Images: All visual assets used in this project are sourced from Freepik.
 Please consider supporting the creators on Freepik for more awesome content.
@@ -39,13 +48,7 @@ If you’ve hosted it on GitHub Pages or any platform, share the link.
 
 [View Project Here](https://aanyakathuria.github.io/technix-crm-redesign/)
 
-## 📬 Contact
-For feedback, suggestions, or collaborations:  
-**Aanya Kathuria** – [LinkedIn] (https://www.linkedin.com/in/aanya-kathuria-6071a8326/)
-**Yashika Kansal** – [LinkedIn] (https://www.linkedin.com/in/yashika-kansal-1829b7233/)
-**Shivani Bansal** – [LinkedIn] ()
 
-Feel free to open an issue or drop a message.
 
 
 
