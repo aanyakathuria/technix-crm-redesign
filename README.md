@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Technix CRM Redesign
 
 A redesigned front-end interface for a CRM (Customer Relationship Management) system. This project focuses on creating a modern, clean, and user-friendly layout using HTML, CSS, and JavaScript.
@@ -86,3 +87,37 @@ cd technix-crm-redesign
 This project is licensed under the MIT License — feel free to use, adapt, and credit us when sharing
 
 
+=======
+# Technix CRM - Website Redesign
+
+## Overview
+This is a redesigned homepage of Technix CRM as part of Web Dash 2025. The website is modern, responsive, clean, and follows SaaS design guidelines.
+
+## Features
+- Dynamic Hero Section with Call-to-Actions
+- Product, Experience, and Collaboration Sections
+- Lead Management Overview
+- Fully Responsive Design
+- TailwindCSS with Custom Fonts and Animations
+- Functional “Get a Demo” Form with Validation
+
+## Tech Stack
+- HTML5
+- TailwindCSS
+- JavaScript (Vanilla)
+- Font Awesome
+- Google Fonts (Inter)
+
+## How to Run
+1. Clone the repo
+2. Open `index.html` in browser
+3. OR run with Live Server extension in VS Code
+
+## Deployment
+Deployed on GitHub Pages: [Add Your Link Here]
+
+## Credits
+- TailwindCSS
+- Font Awesome
+- Google Fonts
+>>>>>>> f323383 (Updated README with full overview, badges, and credits)
