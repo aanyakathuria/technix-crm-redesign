@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Technix CRM Redesign</h1>
-<p align="center"><em>By Team Glitch Gang — Aanya, Yashika & Shivani</em></p>
+<p align="center"><em>By Team The Glitch Gang — Aanya, Yashika & Shivani</em></p>
 
 # Technix CRM Redesign
 
