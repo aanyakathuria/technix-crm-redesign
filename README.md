@@ -60,8 +60,8 @@ technix-crm-redesign/
 
 For feedback, suggestions, or collaborations:  
 **Aanya Kathuria** – [LinkedIn] (https://www.linkedin.com/in/aanya-kathuria-6071a8326/)
-**Yashika Kansal** – [LinkedIn] (https://www.linkedin.com/in/yashika-kansal-1829b7233/)
 **Shivani Bansal** – [LinkedIn] (https://www.linkedin.com/in/shivani-bansal-46546433b/)
+**Yashika Kansal** – [LinkedIn] (https://www.linkedin.com/in/yashika-kansal-1829b7233/)
 
 Feel free to open an issue or drop a message.
 Proudly representing The Glitch Gang 
